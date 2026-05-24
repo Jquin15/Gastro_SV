@@ -122,4 +122,9 @@ document.addEventListener("DOMContentLoaded", () => {
       setTimeout(() => toast.classList.remove("show"), 4000);
     }
   });
+  // --- 4. ACTUALIZAR AÑO DEL FOOTER DINÁMICAMENTE ---
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
 });
