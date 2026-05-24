@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%23ffb703'/><circle cx='50' cy='50' r='38' fill='%23faf8f5' stroke='%23fb8500' stroke-width='4'/><path d='M35 45 Q50 35 65 45 Q75 60 50 70 Q25 60 35 45 Z' fill='%23219ebc'/><circle cx='45' cy='48' r='3' fill='%23023047'/><circle cx='55' cy='48' r='3' fill='%23023047'/><path d='M42 58 Q50 64 58 58' stroke='%23023047' stroke-width='3' fill='none' stroke-linecap='round'/></svg>">
+    <title>Gastro | El Salvador</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+    <header>
+        <nav class="header-nav">
+            <div class="logo">
+            <a href="#home">
+                <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="40" height="40">
+                    <circle cx="50" cy="50" r="42" fill="#ffb703"/>
+                    <circle cx="50" cy="50" r="35" fill="#faf8f5" stroke="#fb8500" stroke-width="3"/>
+                    <path d="M72 45 Q78 50 70 55" stroke="#ffb703" stroke-width="4" fill="none" stroke-linecap="round"/>
+                    <circle cx="42" cy="45" r="4" fill="#023047"/>
+                    <circle cx="58" cy="45" r="4" fill="#023047"/>
+                    <path d="M40 58 Q50 66 60 58" stroke="#023047" stroke-width="4" fill="none" stroke-linecap="round"/>
+                </svg>
+                <span class="logo-text">Gastro <span class="highlight">SV</span></span>
+            </a>
+        </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Inicio</a></li>
+                <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                <li class="nav-item"><a href="#servicios" class="nav-link">Tours y Menú</a></li>
+                <li class="nav-item"><a href="#reservas" class="nav-link">Reservar Mesa</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger-btn" aria-label="Abrir menú">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Ruta Gastronómica de El Salvador</h1>
+            <p>Explora la historia, ingredientes ancestrales y el sabor único del maíz cocinado por manos expertas.</p>
+            <a href="#reservas" class="cta-btn">Reservar un Tour Gastronómico</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="about">
+        <div class="about-content">
+            <h2 class="section-title" style="text-align: left; margin-bottom: 25px;">Nuestra Identidad Culinaria</h2>
+            <p>Nuestra iniciativa nace del amor por las raíces culinarias de Cuscatlán. No somos solo un restaurante o un recorrido turístico tradicional; somos un portal al pasado y al presente de la cocina salvadoreña.</p>
+            <p>Trabajamos de la mano con agricultores locales que preservan variedades nativas de maíz, cosechan el auténtico loroco y extraen el bálsamo de forma artesanal. Cada platillo cuenta la historia de un pueblo resiliente y vibrante.</p>
+            <div class="highlight-box">
+                <h4>El Secreto de Nuestro Sabor</h4>
+                <p>Utilizamos comales de barro tradicionales alimentados por madera seleccionada para otorgarle ese toque ahumado característico a nuestras pupusas artesanales y tamales de elote.</p>
+            </div>
+        </div>
+        <div class="about-img-container">
+            <div class="about-img-box" style="background-image: url('https://images.unsplash.com/photo-1591530935560-63a8c3e803c5?w=600');"></div>
+            <div class="about-img-box" style="background-image: url('https://images.unsplash.com/photo-1585938338392-50a59970d8ee?w=600');"></div>
+        </div>
+    </section>
+
+    <section id="servicios" class="services">
+        <h2 class="section-title">Experiencias y Platillos Auténticos</h2>
+        <p class="section-subtitle">Descubre las opciones diseñadas para deleitar tu paladar y adentrarte en los misterios de las técnicas culinarias precolombinas.</p>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600');"></div>
+                <div class="service-info">
+                    <h3>Clase Magistral de Pupusas</h3>
+                    <p>Aprende de auténticas madrinas del maíz a palmear la masa, rellenar con quesillo, chicharrón molido o loroco fresco, y dominar la cocción exacta en el comal de barro.</p>
+                    <div class="price-tag">
+                        <span>$25.00 / pers</span>
+                        <button class="card-action-btn" data-experiencia="Clase de Pupusas">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1627572704818-472bfa03513b?w=600');"></div>
+                <div class="service-info">
+                    <h3>Tour Ancestral del Maíz</h3>
+                    <p>Un recorrido por cultivos locales para comprender el proceso químico de la nixtamalización prehispánica y recolectar ingredientes de temporada como el chipilín, ayote y cacao.</p>
+                    <div class="price-tag">
+                        <span>$45.00 / pers</span>
+                        <button class="card-action-btn" data-experiencia="Tour Ancestral">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1578593139888-39622e207764?w=600');"></div>
+                <div class="service-info">
+                    <h3>Banquete de Degustación Típica</h3>
+                    <p>Una cena de 5 tiempos guiada por un sommelier gastronómico. Incluye atol de elote, canoas de plátano, tamal de gallina india y una selección de refrescos artesanales.</p>
+                    <div class="price-tag">
+                        <span>$35.00 / pers</span>
+                        <button class="card-action-btn" data-experiencia="Banquete Típico">Seleccionar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reservas" class="booking">
+        <h2 class="section-title">Reserva tu Experiencia</h2>
+        <p class="section-subtitle">Asegura tu cupo en nuestros recorridos gastronómicos o solicita una mesa en nuestro salón principal con anticipación.</p>
+        
+        <div class="booking-container">
+            <form id="booking-form" novalidate>
+                <div class="form-group" id="group-name">
+                    <label for="fullname">Nombre Completo</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="Ej. Juan Pérez">
+                    <span class="error-message">El nombre debe contener al menos 4 letras y no incluir números.</span>
+                </div>
+
+                <div class="form-group" id="group-email">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" id="email" class="form-control" placeholder="ejemplo@correo.com">
+                    <span class="error-message">Por favor introduce un formato de correo electrónico válido.</span>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group" id="group-date">
+                        <label for="date">Fecha de Reserva</label>
+                        <input type="date" id="date" class="form-control">
+                        <span class="error-message">Debes seleccionar una fecha posterior al día de hoy.</span>
+                    </div>
+
+                    <div class="form-group" id="group-guests">
+                        <label for="guests">Número de Personas</label>
+                        <input type="number" id="guests" class="form-control" min="1" max="20" placeholder="1 a 20">
+                        <span class="error-message">El número debe estar entre 1 y 20.</span>
+                    </div>
+                </div>
+
+                <div class="form-group" id="group-experience">
+                    <label for="experience">Experiencia Deseada</label>
+                    <select id="experience" class="form-control">
+                        <option value="">-- Selecciona una opción --</option>
+                        <option value="Clase de Pupusas">Clase Magistral de Pupusas ($25)</option>
+                        <option value="Tour Ancestral">Tour Ancestral del Maíz e Ingredientes ($45)</option>
+                        <option value="Banquete Típico">Banquete de Degustación Típica ($35)</option>
+                        <option value="Mesa Regular">Solo Reserva de Mesa Tradicional</option>
+                    </select>
+                    <span class="error-message">Debes seleccionar una experiencia de la lista.</span>
+                </div>
+
+                <button type="submit" class="submit-btn">Confirmar Mi Solicitud</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">Gastro SV</div>
+            <ul class="social-links">
+                <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+                <li><a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://twitter.com" target="_blank" rel="noopener">X</a></li>
+            </ul>
+        </div>
+        <p class="footer-credits">&copy; 2026 Gastro SV S.A. de C.V.</p>
+    </footer>
+
+    <div class="toast" id="success-toast">
+        <span>¡Reserva enviada con éxito! Revisa tu correo.</span>
+    </div>
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
